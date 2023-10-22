@@ -7,14 +7,10 @@ sudo zypper dup
 sudo zypper install opi
 
 # Install VSCode
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo zypper addrepo https://packages.microsoft.com/yumrepos/vscode vscode
-sudo zypper refresh
-sudo zypper install code
+opi vscode 
 
 # Install Microsoft Edge
-sudo zypper addrepo --refresh https://packages.microsoft.com/yumrepos/edge edge
-sudo zypper install microsoft-edge-beta
+opi msedge
 
 # Install codecs
 opi packman
@@ -28,7 +24,6 @@ sudo zypper install steam lutis
 # Install Celluloid
 sudo zypper install celluloid
 
-# Inst
 
 # Install Cinnamon and LightDM
 sudo zypper install cinnamon lightdm
